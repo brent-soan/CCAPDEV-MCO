@@ -1,0 +1,466 @@
+body{
+  padding-left: 7%;
+  padding-right: 7%;
+  min-height: 100vh;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+
+}
+
+a{
+  color: inherit;
+  text-decoration: inherit;
+
+}
+
+.left-side{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  height: 100vh;
+  padding-right: 1vw;
+  position: fixed;
+}
+.userbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: .1vh solid rgba(183, 183, 183,.3);
+  width: 80%;
+  padding-top: 1vh;
+
+  
+}
+.userpfpholder{
+  width: 10%;
+  padding: 1vh .5vw 1vh 1vw;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.usertext{
+ width: 80%;
+}
+#middle-input{
+  background-color: white;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: .88vw;
+}
+.userbarpfp{
+  overflow: hidden;
+  width: 5vw;
+  max-height: 3vh;
+  border-radius: 50%;
+}
+.userpfp{
+  overflow: hidden;
+  width: 5vw;
+  max-height: 7vh;
+  border-radius: 50%;
+}
+.userpfpimg{
+  object-fit: cover;
+  max-width: 100%;
+  height: 225%;
+}
+.user-info{
+  margin-top: -1.5vh;
+  display: flex;
+  flex-direction: column;
+  
+  width: 90%;
+  font-family: "Robot";
+}
+.user-name{
+  font-weight: 700;
+  font-size: .88vw;
+  color: #0f1419;
+}
+.user-tag{
+  font-weight: 400;
+  font-size: .78vw;
+  color: #5b7083;
+}
+#logo{
+  font-size: 1.3vw;
+  font-family: "Alfa Slab One", serif;
+  font-weight: bold;
+  color: #1df2a1;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+  
+}
+.navbar{
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.navbtn{
+  background-color: #1df2a1;
+  border-radius: 10vh;
+  justify-content: center;
+  color: white;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+
+  margin-right: 4.7vw;
+  font-size: .8vw;
+
+  font-size: 1.04vw;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+.side-button{
+  font-size: 1.04vw;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vh; 
+}
+.navimg{
+  width: 8%;
+  height: auto;
+  margin-right: 1vw;
+}
+
+.middle{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border-right: .1vh solid rgba(183, 183, 183,.3);
+  border-left: .1vh solid rgba(183, 183, 183,.3);
+  margin-left: 20%;
+}
+.divider{
+  height: 2vh;
+  background-color: #f7f9fa;
+}
+.submit-area{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.top-submit{
+  padding: 0 1vw 0 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vh;
+
+  color: #0f1419;
+  border-bottom: .1vh solid rgba(183, 183, 183,.3);
+  font-size: 1.04vw;
+  font-weight: 900;
+  font-family: "Noto Sans";
+}
+.middle-submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: #0f1419;
+  
+  padding: 1vw 0 1vw 0;
+  font-size: 1.04vw;
+}
+.middle-submit-login{
+  display: flex;
+  
+  color: #0f1419;
+  
+  font-size: 1.04vw;
+}
+.bottom-submit{
+  border-top: .1vh solid rgba(183, 183, 183,.3);
+  padding: 1.3vh 0 1.3vh 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 3vw;
+  margin-left: 2vw;
+}
+.bs-left{
+  display: flex;
+  justify-content: space-around;
+  width: 8vw;
+}
+.bsimg{
+  width: 16%;
+  height: auto;
+}
+.bs-right{
+  display: flex;
+  align-items: center;
+  background-color: #1df2a1;
+  border-radius: 10vh;
+  justify-content: center;
+  color: white;
+  padding: 1.5vh 1vw 1.5vh 1vw;
+
+  
+  font-size: .8vw;
+}
+.post-area{
+  display: flex;
+  flex-direction: column;
+
+}
+.post{
+  padding-top: 2.5vh;
+  padding-bottom: 1.5vh;
+  border-bottom: .1vh solid rgba(183, 183, 183,.3); 
+}
+.post-top{
+  color: #5b7083;
+  font-size: .67vw;
+  font-family: "Roboto";
+  padding-left: 3vw;
+  font-weight: 900;
+}
+.post-bottom{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 4vw;
+  margin-top: .5vw;
+}
+.post-icons{
+  display: flex;
+  align-items: center;
+  width: 1.8vw;
+  margin-right: 2vw;
+  font-size: .7vw;
+}
+.actual-posticon{
+  height: auto;
+  width: 65%;
+}
+.forward-icon{
+  height: auto;
+  width: 50%;
+}
+.count{
+  color: #5b7083;
+  margin-left: .7vw;
+}
+.post-middle{
+  display: flex;
+  flex-direction: row;
+}
+.post-itself{
+  display: flex;
+  flex-direction: column;
+  font-size: .88vw;
+  padding-top: .5vh;
+  font-family: "Noto Sans";
+  color: #0f1419;
+}
+.post-info{
+  font-weight: 700;
+}
+.info-handle{
+  color: #5b7083;
+  font-weight: 400;
+}
+.post-imgparent{
+  max-width: 100%;
+  padding: 1vh .5vw 1vh 1vw;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.post-imgholder{ 
+  overflow: hidden;
+  max-width: 3vw;
+  max-height: 6vh;
+  border-radius: 50%;
+}
+.post-img{
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+.right-side{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  max-width: 30%;
+  padding-left: .5vw;
+  overflow: hidden;
+}
+.search-bar{
+  display: flex;
+  align-items: center;
+  padding: 1.5vh 0 1.5vh 1vw;
+  background-color: #Ebeef0;
+  border-radius: 3vh;
+  color: #5b7083;
+  font-family: "Roboto", sans-serif;
+}
+#searchicon{
+  margin-right: .5vw;
+  height: auto;
+  width: 5%;
+}
+
+#right-input{
+  background-color: #Ebeef0;
+  border: none;
+  outline: none;
+
+  font-size: .78vw;
+}
+
+.follow-people{
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f7f9fa;
+  border-radius: 3vh;
+  max-width: 100%;
+}
+
+.follow-title{
+  font-size: 1.04vw;
+  font-family: "Noto Sans";
+  font-weight: 900;
+  padding: 1vh 1vw 1vh 1vw;
+  border-bottom: .1vh solid rgba(183, 183, 183,.3);
+  
+}
+.fs-more{
+  color: #1df2a1;
+  font-size: .78vw;
+  font-weight: 700;
+  font-family: "Noto Sans";
+  padding: 1vh 1vw 1vh 1vw;
+}
+.follow-suggestions{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 2vh 1vw 0 0;
+  border-bottom: .1vh solid rgba(183, 183, 183,.3); 
+}
+.fs-profile{
+  display: flex;
+  flex-direction: row;
+  height: 3.37vh;
+  align-items: center;
+}
+.fs-pfpholder{
+  max-width: 100%;
+  padding: 1vh .5vw 1vh 1vw;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.fs-pfp{ 
+  overflow: hidden;
+  max-width: 2.3vw;
+  max-height: 4.6vh;
+  border-radius: 50%;
+}
+.rs-img{
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+.fs-info{
+  display: flex;
+  flex-direction: column;
+}
+.fs-name{
+  font-family: "Noto Sans";
+  font-size: .78vw;
+  font-weight: 700;
+  color: #0f1419;
+}
+.fs-tag{
+  font-family: "Noto Sans";
+  font-size: .68vw;
+  color: #5b7083;
+}
+
+
+.fs-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1vh 1vw 1vh 1vw;
+  font-family: "Roboto";
+  font-size: .78vw;
+  color: #1df2a1;
+  border: .15vw solid #1df2a1;
+  border-radius: 2vw;
+  margin-bottom: 1vh;
+}
+
+
+.follow-topic{
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f7f9fa;
+  border-radius: 3vh;
+}
+.topic-title{
+  font-size: 1.04vw;
+  font-family: "Noto Sans";
+  font-weight: 900;
+  padding: 1vh 1vw 1vh 1vw;
+  border-bottom: .1vh solid rgba(183, 183, 183,.3);
+}
+.topic-suggestions{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+  border-bottom: .1vh solid rgba(183, 183, 183,.3); 
+  padding: 2vh 1vw 0 1vw;
+}
+
+
+.topic-more{
+  color: #1df2a1;
+  font-size: .78vw;
+  font-weight: 700;
+  font-family: "Noto Sans";
+  padding: 1vh 1vw 1vh 1vw;
+}
+
+.topic-info{
+  display: flex;
+  flex-direction: column;
+}
+.topic-name{
+  font-family: "Noto Sans";
+  font-size: .78vw;
+  font-weight: 700;
+  color: #0f1419;
+}
+.topic-type{
+  font-family: "Noto Sans";
+  font-size: .68vw;
+  color: #5b7083;
+}
