@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <%- include("./partials/head.ejs") %>
+
+    <body>
+        <%- include("./partials/nav.ejs") %>
+
+        <div>
+            <form>
+                <label for="title">Title:</label>
+                <input type="text" name="title" id="title" /><br>
+                <label for="snippet">Snippet:</label>
+                <input type="text" name="snippet" id="snippet" /><br>
+                <label for="body">Body:</label>
+                <textarea name="body" id="body"></textarea><br>
+                <input type="submit" value="Submit" /><br>
+            </form>
+        </div>
+
+        <%- include("./partials/footer.ejs") %>
+    </body>
+</html>
